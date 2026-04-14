@@ -11,6 +11,7 @@ data class UserEntity(
     val name: String,
     val email: String,
     val photoUrl: String?,
+    val examPreparingFor: String,
     val bio: String,
     val subjectsJson: String,
     val studyTimes: Set<StudyTimeOfDay>,

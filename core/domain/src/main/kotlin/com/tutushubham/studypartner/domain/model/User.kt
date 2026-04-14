@@ -13,6 +13,8 @@ data class User(
     val name: String,
     val email: String,
     val photoUrl: String?,
+    /** High-stakes exam focus (Stitch Profile Setup — Basic Info). */
+    val examPreparingFor: String,
     val bio: String,
     val subjects: List<SubjectTag>,
     val studyTimePreferences: Set<com.tutushubham.studypartner.model.StudyTimeOfDay>,

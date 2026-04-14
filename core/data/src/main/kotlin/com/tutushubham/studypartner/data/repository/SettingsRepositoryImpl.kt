@@ -12,6 +12,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 private val KEY_NOTIFICATIONS = booleanPreferencesKey("notifications_enabled")
+private val KEY_CLOUD_SYNC = booleanPreferencesKey("cloud_sync_enabled")
 
 @Singleton
 class SettingsRepositoryImpl @Inject constructor(
@@ -22,5 +23,12 @@ class SettingsRepositoryImpl @Inject constructor(
 
     override suspend fun setNotificationsEnabled(enabled: Boolean) {
         dataStore.edit { it[KEY_NOTIFICATIONS] = enabled }
+    }
+
+    override fun observeCloudSyncEnabled(): Flow<Boolean> =
+        dataStore.data.map { it[KEY_CLOUD_SYNC] == true }.distinctUntilChanged()
+
+    override suspend fun setCloudSyncEnabled(enabled: Boolean) {
+        dataStore.edit { it[KEY_CLOUD_SYNC] = enabled }
     }
 }

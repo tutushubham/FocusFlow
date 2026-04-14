@@ -24,7 +24,27 @@ private val LightColors =
         outline = FocusOutlineVariant,
     )
 
-private val DarkColors = darkColorScheme()
+private val DarkColors =
+    darkColorScheme(
+        primary = FocusPrimary,
+        onPrimary = Color.White,
+        primaryContainer = Color(0xFF003E8C),
+        onPrimaryContainer = Color(0xFFD8E4FF),
+        secondary = Color(0xFFBAC8DB),
+        onSecondary = Color(0xFF233240),
+        secondaryContainer = Color(0xFF3A4858),
+        onSecondaryContainer = Color(0xFFD8E4F8),
+        tertiary = Color(0xFF7FCFC8),
+        onTertiary = Color(0xFF00201E),
+        background = StitchPalette.BackgroundDark,
+        onBackground = StitchPalette.Slate100,
+        surface = StitchPalette.Slate900,
+        onSurface = StitchPalette.Slate100,
+        surfaceVariant = StitchPalette.Slate800,
+        onSurfaceVariant = StitchPalette.Slate400,
+        outline = StitchPalette.Slate700,
+        outlineVariant = StitchPalette.Slate800,
+    )
 
 @Composable
 fun FocusFlowTheme(content: @Composable () -> Unit) {

@@ -108,6 +108,13 @@ fun RootNavHost() {
                         popUpTo(Routes.ProfileSetup) { inclusive = true }
                     }
                 },
+                onNavigateBack = {
+                    if (!navController.popBackStack()) {
+                        navController.navigate(Routes.Auth) {
+                            popUpTo(Routes.ProfileSetup) { inclusive = true }
+                        }
+                    }
+                },
             )
         }
         composable(Routes.Main) {
@@ -138,7 +145,10 @@ fun RootNavHost() {
             SettingsRoute(onBack = { navController.popBackStack() })
         }
         composable(Routes.EditProfile) {
-            EditProfileRoute(onDone = { navController.popBackStack() })
+            EditProfileRoute(
+                onDone = { navController.popBackStack() },
+                onBack = { navController.popBackStack() },
+            )
         }
     }
 }

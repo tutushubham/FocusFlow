@@ -68,6 +68,7 @@ class AuthRepositoryImpl @Inject constructor(
                     name = "",
                     email = email,
                     photoUrl = null,
+                    examPreparingFor = "",
                     bio = "",
                     subjectsJson = "[]",
                     studyTimes = emptySet(),

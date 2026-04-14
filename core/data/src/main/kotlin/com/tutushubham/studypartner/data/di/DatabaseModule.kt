@@ -27,12 +27,13 @@ object DatabaseModule {
                         val subjectsCs = """[{"id":"cs","label":"Computer Science"}]"""
                         val subjectsMath = """[{"id":"math","label":"Mathematics"}]"""
                         db.execSQL(
-                            "INSERT INTO users (id,name,email,photoUrl,bio,subjectsJson,studyTimes,dailyStudyGoalHours,experienceLevel,timezone,sessionsCompleted,totalStudyHours,streakDays) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                            "INSERT INTO users (id,name,email,photoUrl,examPreparingFor,bio,subjectsJson,studyTimes,dailyStudyGoalHours,experienceLevel,timezone,sessionsCompleted,totalStudyHours,streakDays) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                             arrayOf(
                                 "owner-demo-1",
                                 "Jordan",
                                 "jordan@demo.local",
                                 null,
+                                "GRE / GMAT",
                                 "Deep work on algorithms and interview prep.",
                                 subjectsCs,
                                 "Evening",
@@ -45,12 +46,13 @@ object DatabaseModule {
                             ),
                         )
                         db.execSQL(
-                            "INSERT INTO users (id,name,email,photoUrl,bio,subjectsJson,studyTimes,dailyStudyGoalHours,experienceLevel,timezone,sessionsCompleted,totalStudyHours,streakDays) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                            "INSERT INTO users (id,name,email,photoUrl,examPreparingFor,bio,subjectsJson,studyTimes,dailyStudyGoalHours,experienceLevel,timezone,sessionsCompleted,totalStudyHours,streakDays) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                             arrayOf(
                                 "owner-demo-2",
                                 "Sam",
                                 "sam@demo.local",
                                 null,
+                                "",
                                 "Calculus study blocks with whiteboard notes.",
                                 subjectsMath,
                                 "Morning",

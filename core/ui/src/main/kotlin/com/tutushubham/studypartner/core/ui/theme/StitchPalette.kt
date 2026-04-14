@@ -15,6 +15,8 @@ object StitchPalette {
     val Slate800 = Color(0xFF1E293B)
     val Slate900 = Color(0xFF0F172A)
     val BackgroundLight = Color(0xFFF6F6F8)
+    /** Stitch `background-dark` from Remix HTML (`dark:bg-background-dark`). */
+    val BackgroundDark = Color(0xFF111621)
     val Orange100 = Color(0xFFFFEDD5)
     val Orange700 = Color(0xFFC2410C)
     val Emerald600 = Color(0xFF059669)

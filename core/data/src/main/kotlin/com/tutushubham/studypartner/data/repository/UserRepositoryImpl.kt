@@ -36,6 +36,6 @@ class UserRepositoryImpl @Inject constructor(
         val entity = userDao.getUser(id) ?: return false
         return entity.name.isNotBlank() &&
             entity.subjectsJson != "[]" &&
-            entity.bio.isNotBlank()
+            (entity.examPreparingFor.isNotBlank() || entity.bio.isNotBlank())
     }
 }
