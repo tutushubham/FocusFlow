@@ -19,7 +19,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AutoGraph
 import androidx.compose.material.icons.filled.Mail
-import androidx.compose.material.icons.filled.Target
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.HorizontalDivider
@@ -91,7 +90,7 @@ fun AuthScreenContent(
                 shadowElevation = 6.dp,
             ) {
                 Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Icon(Icons.Default.Target, null, tint = Color(0xFFF1F5F9), modifier = Modifier.size(36.dp))
+                    Icon(Icons.Default.AutoGraph, null, tint = Color(0xFFF1F5F9), modifier = Modifier.size(36.dp))
                 }
             }
             Text("Focus Flow", style = MaterialTheme.typography.headlineMedium.copy(fontWeight = FontWeight.Bold, fontSize = 28.sp))
