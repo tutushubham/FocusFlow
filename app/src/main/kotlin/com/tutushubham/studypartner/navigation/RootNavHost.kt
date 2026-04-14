@@ -125,6 +125,7 @@ fun RootNavHost() {
             arguments = listOf(navArgument("matchId") { type = NavType.StringType }),
         ) {
             ChatRoute(
+                onBack = { navController.popBackStack() },
                 onBackToHome = {
                     navController.popBackStack(Routes.Main, inclusive = false)
                 },
