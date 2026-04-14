@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2060df",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<title>Focus Flow Onboarding</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-transparent p-4 pb-2 justify-between">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-primary/10">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">chevron_left</span>
+</button>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Focus Flow</h2>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</div>
+<!-- Hero Illustration/Image Section -->
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-6">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-primary/5 dark:bg-primary/20 @[480px]:rounded-xl min-h-[397px] relative" data-alt="Minimalist workspace with laptop and coffee cup" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKwrl8c916IGMaYIjrJoSLa1CSk0tCNvb6YMmtxVewgpC_GA2cbFsnMYnWVZNt7t0FxOUmsTeGEZVPn4zI-oyyxDSH7ExfA-JVKQPCVlVX37YHIWaTj53Xi3kmJcK0hJcbaw_4XFbDP2oW23Om2fiYSrRUpSXbBByHfm5ZRPG_gSxCVeVwLFM49iXdd1KPElMF4J-yohrISjo3tj7CLmbxtUHG5Pcz1_5v_paUZHGWR6s3u14KbOIsLlQq_CYUIw3-aqCb1RW00C2u");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-light/80 dark:from-background-dark/80 to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Content Section -->
+<div class="flex-1 flex flex-col justify-center px-6 pt-10 pb-8">
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-[32px] font-bold leading-tight text-center pb-3">
+                Ready to Focus?
+            </h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed pb-8 px-4 text-center">
+                Your journey towards better study habits starts now. Join thousands of students improving their productivity.
+            </p>
+<!-- Pagination Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-6">
+<div class="h-1.5 w-1.5 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-primary/20 dark:bg-primary/30"></div>
+<div class="h-1.5 w-8 rounded-full bg-primary"></div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="px-6 pb-12 w-full max-w-md mx-auto">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all active:scale-[0.98]">
+                Get Started
+            </button>
+</div>
+<!-- Extra spacing for safe area -->
+<div class="h-4"></div>
+</div>
+</body></html>

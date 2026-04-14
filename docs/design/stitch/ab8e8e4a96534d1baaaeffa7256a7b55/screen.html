@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Focus Flow - Profile Setup</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2060df",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-screen w-full flex-col max-w-lg mx-auto bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- Top Navigation -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center justify-start focus:outline-none">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-12">Profile Setup</h2>
+</div>
+<!-- Progress Indicator -->
+<div class="flex flex-col gap-3 p-6">
+<div class="flex gap-6 justify-between">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-semibold uppercase tracking-wider">Step 1 of 4</p>
+<p class="text-primary text-sm font-bold">25%</p>
+</div>
+<div class="rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+<div class="h-2 rounded-full bg-primary" style="width: 25%;"></div>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 flex flex-col px-6 pt-8">
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-bold leading-tight pb-3">Welcome to Focus Flow</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed pb-8">Let's start by personalizing your study environment. We'll help you stay on track for your upcoming challenges.</p>
+<form class="space-y-8">
+<!-- Name Input -->
+<div class="flex flex-col gap-2">
+<label class="text-slate-900 dark:text-slate-100 text-sm font-bold" for="full-name">Full Name</label>
+<div class="relative">
+<input class="form-input flex w-full rounded-xl text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 focus:border-primary focus:ring-2 focus:ring-primary/20 h-14 px-4 text-base transition-all" id="full-name" placeholder="e.g. Alex Johnson" type="text"/>
+</div>
+</div>
+<!-- Dropdown -->
+<div class="flex flex-col gap-2">
+<label class="text-slate-900 dark:text-slate-100 text-sm font-bold" for="exam-type">Exam preparing for</label>
+<div class="relative">
+<select class="form-select appearance-none flex w-full rounded-xl text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 focus:border-primary focus:ring-2 focus:ring-primary/20 h-14 px-4 text-base transition-all pr-10" id="exam-type">
+<option disabled="" selected="" value="">Select an exam</option>
+<option value="sat">SAT / ACT</option>
+<option value="lsat">LSAT</option>
+<option value="mcat">MCAT</option>
+<option value="gre">GRE / GMAT</option>
+<option value="cfa">CFA / CPA</option>
+<option value="other">Other Professional Exam</option>
+</select>
+<div class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-slate-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+</form>
+</div>
+<!-- Sticky Bottom Button -->
+<div class="p-6 pb-10 bg-gradient-to-t from-background-light dark:from-background-dark via-background-light/90 dark:via-background-dark/90 to-transparent">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold h-14 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span>Continue</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-center text-slate-400 text-xs mt-4">You can update these details later in settings.</p>
+</div>
+</div>
+</body></html>

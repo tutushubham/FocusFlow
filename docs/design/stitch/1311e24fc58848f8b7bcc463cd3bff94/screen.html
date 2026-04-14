@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Focus Flow - Sign In</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#2060df",
+                "background-light": "#f6f6f8",
+                "background-dark": "#111621",
+              },
+              fontFamily: {
+                "display": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark transition-colors duration-200">
+<div class="relative flex min-h-screen flex-col items-center justify-center p-4">
+<div class="w-full max-w-[420px] space-y-12">
+<!-- Logo Section -->
+<div class="flex flex-col items-center space-y-4">
+<div class="h-16 w-16 bg-primary rounded-xl flex items-center justify-center text-slate-100 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined !text-4xl">
+                        target
+                    </span>
+</div>
+<div class="text-center">
+<h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-display">Focus Flow</h1>
+<p class="text-slate-500 dark:text-slate-400 mt-2 text-base font-normal">Find your productivity rhythm</p>
+</div>
+</div>
+<!-- Hero/Illustration Placeholder -->
+<div class="@container">
+<div class="overflow-hidden rounded-xl bg-primary/5 dark:bg-primary/10 aspect-[16/9] flex items-center justify-center">
+<div class="w-full h-full bg-gradient-to-br from-primary/20 via-primary/5 to-transparent flex items-center justify-center" data-alt="Abstract minimalist productivity pattern with soft blue gradients">
+<span class="material-symbols-outlined !text-7xl text-primary/30">
+                            auto_graph
+                        </span>
+</div>
+</div>
+</div>
+<!-- Authentication Buttons -->
+<div class="space-y-4">
+<button class="group flex w-full items-center justify-center gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 h-14 px-6 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all font-semibold">
+<img alt="Google logo" class="h-5 w-5" data-alt="Google G logo in original colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKLSQSNFqnBNViUbBKCPSS4NqI_UAqNmGLWC69JbQZ2rtsn9bxSj5A3KPPFjwpp34Yy53eJ367tW3luc0i-nw_X6o_TgY7W4FFv9TU9d33ABNTyAhxoHb4d8kPZRH5RpuZFpzdpBWO7SSU9GfpIw0BA9YKsDHLJ3DmVz0ct7evTZH3hyM-x2s9cIvnjeTkwcu_fjOMlS109tcO6SZt6V-rokCPMthp3LG2vtmxiWE4e0hdGyyrIuLhbwdmg01RDUcqrOVVZhOM9yLE"/>
+<span>Continue with Google</span>
+</button>
+<button class="flex w-full items-center justify-center gap-3 rounded-xl bg-primary h-14 px-6 text-white hover:bg-primary/90 transition-all font-semibold shadow-md shadow-primary/20">
+<span class="material-symbols-outlined">
+                        mail
+                    </span>
+<span>Continue with Email</span>
+</button>
+</div>
+<!-- Footer Legal -->
+<div class="space-y-6 pt-4">
+<div class="relative">
+<div aria-hidden="true" class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-slate-200 dark:border-slate-800"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="bg-background-light dark:bg-background-dark px-4 text-slate-400">New here? Join the flow</span>
+</div>
+</div>
+<p class="text-center text-xs leading-relaxed text-slate-400 dark:text-slate-500 px-6">
+                    By continuing, you agree to our 
+                    <a class="underline hover:text-primary transition-colors" href="#">Terms of Service</a> 
+                    and 
+                    <a class="underline hover:text-primary transition-colors" href="#">Privacy Policy</a>.
+                </p>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2060df",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative mx-auto flex min-h-screen max-w-md flex-col overflow-x-hidden bg-background-light dark:bg-background-dark">
+<!-- Top Header -->
+<header class="sticky top-0 z-10 border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 pt-6 pb-4">
+<div class="flex items-center justify-between gap-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h1 class="flex-1 text-center text-xl font-bold tracking-tight">Focus Flow</h1>
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">search</span>
+</div>
+</div>
+<div class="mt-6 flex gap-2 overflow-x-auto pb-1 no-scrollbar">
+<button class="flex h-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary px-4 text-white">
+<span class="text-sm font-medium">All Partners</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-100 dark:bg-slate-800 px-4 text-slate-700 dark:text-slate-300">
+<span class="text-sm font-medium">Time</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-100 dark:bg-slate-800 px-4 text-slate-700 dark:text-slate-300">
+<span class="text-sm font-medium">Subject</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-100 dark:bg-slate-800 px-4 text-slate-700 dark:text-slate-300">
+<span class="text-sm font-medium">Level</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 space-y-4 p-4 pb-24">
+<div class="flex items-center justify-between">
+<h2 class="text-lg font-bold">Recommended Partners</h2>
+<span class="text-xs font-semibold text-primary">24 Online Now</span>
+</div>
+<!-- Card 1 -->
+<div class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 shadow-sm transition-all hover:border-primary/50">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-primary/10">
+<img class="h-full w-full object-cover" data-alt="Close up portrait of a young man smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAACD3uFiBH352tOZX96Htf5JF78WrBR76D6KXKv1Nk97ac0BwMarIb5q4dG6VvGl8QcluwumWqukzp9i_qLhsFhJlln5kKBTZD2VIJTd4mbTJ_BQJBoNZdg-dfYO7h-jh94l417y-5lGxl_PUl6rNMjxTuXXLr2uqdrj05402PKE2nJ9036wjNTyXu9uqF8Zjkj2oAVzXMxTG3iWVpqgaeBPKusSemSIjcThKyn7YQxvh5WDFTL-ngshKrn1Nkj1VOXhfcvPL4bY3u"/>
+<div class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white dark:border-slate-900 bg-green-500"></div>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-base font-bold">Alex Rivers</h3>
+<span class="rounded bg-primary/10 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">Pro</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">SAT Prep • 420 Study Hours</p>
+</div>
+</div>
+<button class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 text-slate-400">
+<span class="material-symbols-outlined text-xl">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center justify-between gap-3 border-t border-slate-50 dark:border-slate-800 pt-3">
+<div class="flex -space-x-2">
+<div class="h-6 w-6 rounded-full border-2 border-white dark:border-slate-900 bg-slate-200 dark:bg-slate-700"></div>
+<div class="h-6 w-6 rounded-full border-2 border-white dark:border-slate-900 bg-slate-300 dark:bg-slate-600"></div>
+<div class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-white dark:border-slate-900 bg-primary/20 text-[8px] font-bold text-primary">+12</div>
+</div>
+<button class="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+                        Start Session
+                    </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 shadow-sm transition-all hover:border-primary/50">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-primary/10">
+<img class="h-full w-full object-cover" data-alt="Portrait of a woman with glasses looking at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWFTC66HX9dU1Pta4eYwVW0wGtWlxcAXc5hxaa7YpiR3Fs4MZZfgFhX_4EgYWbU8DudCYE5odH0MVl6QHWOZAvxcRqnwFsDQ_4awBwF6jseM5AFPJVxkwGVAO4h4Y-Gn3WMJWp93c8QcLSCIazwMMtSbO3pTcb53XhmzSQkyVJB7q1v4kXs2w6FG3ZSK-GktH90mHxV3c9PAFD66rpcYziXolcGifhyD4CJ9TJfkfIfhsAXcRrpkezq3OVV1xdIq1X8mXf1NALRtuR"/>
+<div class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white dark:border-slate-900 bg-green-500"></div>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-base font-bold">Jamie Chen</h3>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">MCAT • 150 Study Hours</p>
+</div>
+</div>
+<button class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 text-slate-400">
+<span class="material-symbols-outlined text-xl">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center justify-between gap-3 border-t border-slate-50 dark:border-slate-800 pt-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400 text-lg">history</span>
+<span class="text-xs text-slate-500">Studied yesterday</span>
+</div>
+<button class="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+                        Start Session
+                    </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 shadow-sm transition-all hover:border-primary/50">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-primary/10">
+<img class="h-full w-full object-cover" data-alt="Portrait of a young smiling man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkx-Pp3RYz028KPveJsYN3twItG6YVvBmXS8VYmctbT_uxaeXmZ8XWYzU2ErVhIg42TcgsOWbkXWxWDc6qHNc76xgi_UNTG01RIrrd1idspYVr-eKrC5JX8rcKyF8fjk6DURHF2rXd3dHS3zniyf9tpQWblPra8ZFdFP96ngE_rG-Hw_P7WCCj8-oKi-8QS20gYLvecoiLEtFmg9xvvSxvxfm37qtUE-CLVD8stCuP2Pu3S_6zvnmmHKCt3PZ8YnGjsCJ18aqS4K3E"/>
+<div class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white dark:border-slate-900 bg-green-500"></div>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-base font-bold">Marcus Thorne</h3>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">LSAT • 85 Study Hours</p>
+</div>
+</div>
+<button class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 text-slate-400">
+<span class="material-symbols-outlined text-xl">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center justify-between gap-3 border-t border-slate-50 dark:border-slate-800 pt-3">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-lg">workspace_premium</span>
+<span class="text-xs font-bold">Top Match</span>
+</div>
+<button class="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+                        Start Session
+                    </button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 shadow-sm transition-all hover:border-primary/50">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-primary/10">
+<img class="h-full w-full object-cover" data-alt="Close up of a woman looking sideways" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcMAa1IY1ZLs7tXONDTHSTrWAmetl8PzwYkVrsgHyfS7XQlaTCrqDY4kF7G2lQehfIe3VELTQj5EwxincIMnsdp4kMAwQgMnsjPLFpExsw3wu_bpaVcLVqBemWrA5d66chJClKgKkDoPpm6GUm-z1c80Lrepvrl-qaw_vrRTszvosJRHjtvBiTHHE1HKGzDoT9KZyDTE2DA9XmXDLoG9nV4-EacXRx2c2yQhBFAsbW4wTsriykqpfD7eoBsgveuSOUti_XTkguJCg2"/>
+<div class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white dark:border-slate-900 bg-slate-300 dark:bg-slate-600"></div>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-base font-bold text-slate-600 dark:text-slate-400">Sarah Jenkins</h3>
+</div>
+<p class="text-sm text-slate-400">GMAT • 310 Study Hours</p>
+</div>
+</div>
+<button class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 text-slate-400">
+<span class="material-symbols-outlined text-xl">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center justify-between gap-3 border-t border-slate-50 dark:border-slate-800 pt-3">
+<span class="text-xs text-slate-400">Offline</span>
+<button class="flex items-center gap-2 rounded-lg bg-slate-200 dark:bg-slate-800 px-4 py-2 text-sm font-bold text-slate-500 cursor-not-allowed">
+<span class="material-symbols-outlined text-lg">notifications</span>
+                        Notify Me
+                    </button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-1/2 z-20 w-full max-w-md -translate-x-1/2 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 px-6 pb-6 pt-3">
+<div class="flex justify-between items-center">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">timer</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Focus</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">group</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Partners</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Stats</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .fill-1 {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</body></html>

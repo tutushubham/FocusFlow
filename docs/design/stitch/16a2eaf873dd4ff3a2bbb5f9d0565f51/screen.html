@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Focus Flow - Study Partner Chat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2060df",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .message-shadow {
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex h-screen w-full flex-col overflow-hidden max-w-md mx-auto bg-white dark:bg-slate-900 shadow-2xl">
+<header class="flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 sticky top-0 z-10">
+<button class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex flex-col items-center">
+<h1 class="text-base font-semibold tracking-tight">Study Partner Chat</h1>
+<span class="text-[10px] uppercase tracking-widest text-slate-400 font-medium">Focus Flow</span>
+</div>
+<button class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<div class="flex-1 overflow-y-auto p-6 space-y-8 scroll-smooth">
+<div class="flex justify-center">
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-[11px] font-medium text-slate-500 rounded-full">TODAY</span>
+</div>
+<div class="flex items-start gap-3">
+<div class="h-8 w-8 rounded-full bg-slate-200 dark:bg-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Portrait of a male study partner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPxNPxkzxJuoS-omBELxzQXWEnp5la2NrXTIxx5o_NSrAt1PzALUqM0WOirdvsWBIdzHA5eTsnovivcpVzz_OwctEBBHE7oYsVl0Gi78DvnBONJlxKbH1DwJWgJwoQS6wh1BQHtCSM5yj5IVrdxAoCe44eW2KglJuvlZyNRPvQKrU2lloFq1rbXyRffu1uIkYFmxbkIPgP-xDx_ZScw5ixx654H1TAw2iwGfMgQCU6iVK3p4JAFbJfJhFDNa42T3_QQIMDnuV-YSMU"/>
+</div>
+<div class="flex flex-col gap-1.5 max-w-[80%]">
+<span class="text-[11px] font-medium text-slate-400 ml-1">Alex Chen</span>
+<div class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-4 py-3 rounded-xl rounded-tl-none message-shadow">
+<p class="text-sm leading-relaxed">How is your progress on the physics problem set?</p>
+</div>
+</div>
+</div>
+<div class="flex items-start flex-row-reverse gap-3">
+<div class="h-8 w-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center text-primary overflow-hidden border border-primary/10">
+<img class="h-full w-full object-cover" data-alt="Portrait of the female user" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLmkZgke2yG9UkchpIiW9KYSJlSsylxjOYzf4McausU2tG4yyD5l8-57pX2mLuwT2ZAGPsLeZ7hIdtvVxvFK1gy-ccc5vaTQLltW2Bu8rTxEjaR1niVcVzGqu_Qa1FX-5fDlD-SAdyTJELx8ZqLedkJuRCqD_1ykISI4z98j4yZaIJAZEALNXO72XOM0P9JhqJbudO9YcFGa866OK9Bwi4DC2PKoJtZ85bBCAubn17ArvQtq-dVairkQHkB7LfxIqbShYgCDQNN6lW"/>
+</div>
+<div class="flex flex-col items-end gap-1.5 max-w-[80%]">
+<span class="text-[11px] font-medium text-slate-400 mr-1">You</span>
+<div class="bg-primary text-white px-4 py-3 rounded-xl rounded-tr-none message-shadow">
+<p class="text-sm leading-relaxed">I just finished the first two chapters. Ready to review?</p>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="h-8 w-8 rounded-full bg-slate-200 dark:bg-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="Portrait of a male study partner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5VZTSTw6Mhs1Y9DgJecWMJ4z7RTUdNciNV8VbBQgA18zdLBfWeSMM4gshV-Hk2989x4Dgx1UHg3ZIfuJQMluSoE-AvMmS5Ch3_HVQkp-3ml9VW1mZUwPf-X2ykk7P0PNGEmoKMF1gqmkyAuRVWuVTfXAZUR8y6HYDsOIrqtEfkVUWbWeYUO2voJEl4m61X5z2Lr84j2rUv5WNddH6aeqKswfbxFPL9eGF0OiZraFTaLC2JDhR2iyUKIc6MGFZBuseXzzrT0_kY73f"/>
+</div>
+<div class="flex flex-col gap-1.5 max-w-[80%]">
+<span class="text-[11px] font-medium text-slate-400 ml-1">Alex Chen</span>
+<div class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 px-4 py-3 rounded-xl rounded-tl-none message-shadow">
+<p class="text-sm leading-relaxed">Perfect. Let's go over the second law equations. I'm struggling a bit with the friction variables.</p>
+</div>
+</div>
+</div>
+<div class="flex items-start flex-row-reverse gap-3">
+<div class="h-8 w-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center text-primary overflow-hidden border border-primary/10">
+<img class="h-full w-full object-cover" data-alt="Portrait of the female user" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMwO-Yt85dObfnjrhmjbKElQu5S1ylhb8P1klfyRm1RnSi8ZKwniIO4knt0C0Qy8IwNrtV5BDXOAyUzsPktRCoNHd8UAvGXkjQwC4eVXPRRRxu3OF4Zt-S-5gLayLd73LaHmosrvCsYM2FuoEYueulyLLyNXx-O6tG97b8Xd1M66CsefiFBgQcRgGcIGmguAqDBvhSPUT8Jpos8FedT5q1l65ehQfGJECgsA-ExCqHV5ej9gsNOlTsmAKCCQGWeCsC_WAInN7UtvYA"/>
+</div>
+<div class="flex flex-col items-end gap-1.5 max-w-[80%]">
+<span class="text-[11px] font-medium text-slate-400 mr-1">You</span>
+<div class="bg-primary text-white px-4 py-3 rounded-xl rounded-tr-none message-shadow">
+<p class="text-sm leading-relaxed">Sounds like a plan. I'll open the whiteboard session now.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+<div class="flex items-center gap-3 bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-2 border border-slate-200 dark:border-slate-700">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-sm text-slate-700 dark:text-slate-200 placeholder-slate-400 py-2" placeholder="Type a message..." type="text"/>
+<button class="bg-primary text-white h-10 w-10 rounded-xl flex items-center justify-center shadow-md shadow-primary/20 hover:bg-primary/90 transition-all active:scale-95">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+<div class="mt-3 flex justify-center">
+<p class="text-[10px] text-slate-400 italic">Chat disabled during active focus sessions</p>
+</div>
+</div>
+<nav class="flex border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 py-3">
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 hover:text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">chat_bubble</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 hover:text-primary" href="#">
+<span class="material-symbols-outlined">timer</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 hover:text-primary" href="#">
+<span class="material-symbols-outlined">settings</span>
+</a>
+</nav>
+</div>
+</body></html>
